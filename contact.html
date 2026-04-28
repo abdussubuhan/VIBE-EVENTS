@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Vibe Events & Weddings</title>
+    <meta name="description" content="Contact Vibe Events & Weddings in Ernakulam to plan your luxury event.">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-header {
+            padding-top: calc(var(--nav-height) + 5rem);
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 10rem;
+        }
+
+        .contact-info {
+            padding: 3rem;
+            background: #111;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 8px;
+        }
+
+        .contact-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .info-item {
+            margin-bottom: 2rem;
+        }
+
+        .info-item h3 {
+            font-size: 1.2rem;
+            font-family: var(--font-sans);
+            color: #fff;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .info-item p, .info-item a {
+            color: var(--color-text-muted);
+            font-size: 1.1rem;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 100%;
+            min-height: 500px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            filter: invert(90%) hue-rotate(180deg) brightness(80%) contrast(150%); /* Dark mode map hack */
+        }
+
+        .social-cta {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 1rem 2rem;
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: white !important;
+            border-radius: 4px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .social-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(220, 39, 67, 0.4);
+        }
+
+        @media (max-width: 900px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .map-container {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-brand">VIBE</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html" style="color: var(--color-accent);">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <header class="contact-header container">
+            <h1 class="reveal-text">Let's Connect</h1>
+            <p class="reveal-text" style="max-width: 600px; margin: 1.5rem auto 0; font-style: italic;">Your dream event begins with a conversation. Reach out to us and let's craft magic together.</p>
+        </header>
+
+        <section class="container contact-grid">
+            <div class="contact-info">
+                <h2 class="reveal-text">Get in Touch</h2>
+                
+                <div class="info-item reveal-text">
+                    <h3>Location</h3>
+                    <p>Ernakulam, Kerala, India</p>
+                </div>
+                
+                <div class="info-item reveal-text">
+                    <h3>Direct Contact</h3>
+                    <p>Email: hello@vibeevents.com</p>
+                    <p>Phone: +91 98765 43210</p> <!-- Placeholder, as specific phone wasn't scraped successfully -->
+                </div>
+                
+                <div class="info-item reveal-text">
+                    <h3>Follow the Vibe</h3>
+                    <p>Discover our latest setups and behind-the-scenes magic.</p>
+                    <a href="https://www.instagram.com/vibe_eventz.weddings/" target="_blank" class="social-cta">Connect on Instagram</a>
+                </div>
+            </div>
+
+            <div class="map-container reveal-text">
+                <!-- Google Maps Embed for Ernakulam coordinates (9.9912792, 76.31139) -->
+                <iframe 
+                    src="https://maps.google.com/maps?q=9.9912792,76.31139&hl=en&z=14&amp;output=embed" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Vibe Events & Weddings</h3>
+                    <p>Ernakulam, Kerala</p>
+                    <p>Crafting luxurious, maximalist celebrations that leave a lasting impression.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="portfolio.html">Our Work</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h3>Connect</h3>
+                    <a href="https://www.instagram.com/vibe_eventz.weddings/" target="_blank">Instagram</a>
+                    <a href="contact.html">Find us on Map</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Vibe Events & Weddings. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

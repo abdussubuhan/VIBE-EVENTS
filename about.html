@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Vibe Events & Weddings</title>
+    <meta name="description" content="Discover the passion and maximalist approach behind Vibe Events & Weddings in Ernakulam.">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .about-header {
+            padding-top: calc(var(--nav-height) + 5rem);
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+        .story-section {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 10rem;
+        }
+        .story-img-wrapper {
+            position: relative;
+            padding-bottom: 130%;
+            overflow: hidden;
+            border-radius: 4px;
+        }
+        .story-img-wrapper img {
+            position: absolute;
+            top: -10%;
+            left: 0;
+            width: 100%;
+            height: 120%;
+            object-fit: cover;
+        }
+        .story-content h2 {
+            margin-bottom: 2rem;
+            font-size: 3rem;
+        }
+        .story-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+        @media (max-width: 900px) {
+            .story-section {
+                grid-template-columns: 1fr;
+            }
+            .story-img-wrapper {
+                padding-bottom: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-brand">VIBE</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html" style="color: var(--color-accent);">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <header class="about-header container">
+            <h1 class="reveal-text">Our Story</h1>
+            <p class="reveal-text" style="max-width: 600px; margin: 1.5rem auto 0; font-style: italic;">We don't just host events; we curate enduring memories steeped in elegance and grandeur.</p>
+        </header>
+
+        <section class="container story-section">
+            <div class="story-img-wrapper">
+                <img src="assets/images/wedding_couple_portrait_1777387961321.png" alt="Happy Couple" class="parallax-img">
+            </div>
+            <div class="story-content">
+                <h2 class="reveal-text">The Visionaries of Celebration</h2>
+                <p class="reveal-text">At Vibe Events & Weddings, we believe that every love story deserves to be told with unapologetic grandeur. Based in the heart of Ernakulam, Kerala, our journey began with a singular vision: to transform ordinary spaces into breathtaking, maximalist dreamscapes.</p>
+                <p class="reveal-text">We blend deep traditional roots with contemporary luxury. Whether it's the rich tapestry of a Hindu wedding mandap or the elegant serenity of a modern reception, our bespoke approach ensures that no two events are ever the same.</p>
+                <p class="reveal-text">Our dedicated team of planners, florists, and designers work tirelessly to curate the perfect vibe. From selecting the finest white orchids and marigolds to orchestrating dynamic Sangeet lighting, we obsess over the details so you don't have to.</p>
+                <a href="portfolio.html" class="cta-btn" style="margin-top: 2rem;">View Our Masterpieces</a>
+            </div>
+        </section>
+
+        <section class="parallax-banner">
+            <div class="bg" style="background-image: url('assets/images/wedding_outdoor_reception_1777387901049.png');"></div>
+            <h2 class="reveal-text" style="font-size: 4rem; text-align: center;">Beyond the Ordinary</h2>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Vibe Events & Weddings</h3>
+                    <p>Ernakulam, Kerala</p>
+                    <p>Crafting luxurious, maximalist celebrations that leave a lasting impression.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="portfolio.html">Our Work</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h3>Connect</h3>
+                    <a href="https://www.instagram.com/vibe_eventz.weddings/" target="_blank">Instagram</a>
+                    <a href="contact.html">Find us on Map</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Vibe Events & Weddings. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Vibe Events & Weddings</title>
+    <meta name="description" content="View our portfolio of luxury, maximalist weddings and events.">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .portfolio-header {
+            padding-top: calc(var(--nav-height) + 5rem);
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+        
+        .masonry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            padding: 0 5% 10rem;
+        }
+
+        .portfolio-item {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            transform-style: preserve-3d;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            cursor: pointer;
+            aspect-ratio: 4/5;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 2rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            transform: translateZ(30px); /* For 3D effect */
+        }
+
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .portfolio-overlay h3 {
+            color: var(--color-accent);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .portfolio-overlay p {
+            color: #fff;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-brand">VIBE</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html" style="color: var(--color-accent);">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <header class="portfolio-header container">
+            <h1 class="reveal-text">Our Masterpieces</h1>
+            <p class="reveal-text" style="max-width: 600px; margin: 1.5rem auto 0; font-style: italic;">A curated collection of our most breathtaking events, designed to inspire.</p>
+        </header>
+
+        <div class="masonry-grid container">
+            <!-- Item 1 -->
+            <div class="portfolio-item reveal-text" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
+                <img src="assets/images/wedding_hero_bg_1777387868395.png" alt="Royal Reception">
+                <div class="portfolio-overlay">
+                    <h3>Royal Reception</h3>
+                    <p>Grand stage design with white and gold floral arrangements.</p>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="portfolio-item reveal-text" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
+                <img src="assets/images/wedding_stage_decor_1777387883776.png" alt="Luxury Mandap">
+                <div class="portfolio-overlay">
+                    <h3>Luxury Mandap</h3>
+                    <p>Elaborate floral mandap with crystal chandeliers.</p>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="portfolio-item reveal-text" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
+                <img src="assets/images/wedding_outdoor_reception_1777387901049.png" alt="Garden Party">
+                <div class="portfolio-overlay">
+                    <h3>Enchanted Garden</h3>
+                    <p>Outdoor reception setup under a twinkling fairy light canopy.</p>
+                </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="portfolio-item reveal-text" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
+                <img src="assets/images/wedding_flowers_floral_1777387927617.png" alt="Floral Centerpiece">
+                <div class="portfolio-overlay">
+                    <h3>Floral Artistry</h3>
+                    <p>Dramatic tropical leaves and white orchids.</p>
+                </div>
+            </div>
+            <!-- Item 5 -->
+            <div class="portfolio-item reveal-text" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
+                <img src="assets/images/sangeet_ceremony_1777387943755.png" alt="Sangeet Ceremony">
+                <div class="portfolio-overlay">
+                    <h3>Vibrant Sangeet</h3>
+                    <p>Energetic colors and lighting for a festive night.</p>
+                </div>
+            </div>
+            <!-- Item 6 -->
+            <div class="portfolio-item reveal-text" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
+                <img src="assets/images/wedding_couple_portrait_1777387961321.png" alt="Couple Portrait">
+                <div class="portfolio-overlay">
+                    <h3>Timeless Portraits</h3>
+                    <p>Capturing the elegance of traditional Kerala attire.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Vibe Events & Weddings</h3>
+                    <p>Ernakulam, Kerala</p>
+                    <p>Crafting luxurious, maximalist celebrations that leave a lasting impression.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="portfolio.html">Our Work</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h3>Connect</h3>
+                    <a href="https://www.instagram.com/vibe_eventz.weddings/" target="_blank">Instagram</a>
+                    <a href="contact.html">Find us on Map</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Vibe Events & Weddings. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+    <!-- Vanilla Tilt for 3D hover effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
